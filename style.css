@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background: #333;
+    color: #ffff;
+    line-height: 1.6;
+    height: 100vh;
+    /*overflow: hidden;*/
+}
+
+.containerA {
+    text-overflow: "";
+    text-align: center;
+    font-size: 40px;
+}
+
+u {
+    text-decoration: none;
+}
+
+.block {
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    font-style: italic;
+    font-size: 20px;
+    padding: 1rem;
+    margin-left: 4rem;
+    line-height: 3;
+    text-overflow: clip;
+    margin-top: 2rem;
+}
+
+.blockTwo {
+    display: flex;
+    flex-basis: auto;
+    flex-flow: column;
+    width: 300px;
+    height: 250px;
+    background-color: #ffff;
+    border-radius: 10px;
+    font-style: italic;
+    margin: auto;
+    color: #24262b;
+    padding-bottom: 2rem;
+    justify-items: center;
+    overflow: auto;
+}
+
+.blockTwo li {
+    text-decoration: none;
+    font-size: 8px;
+    line-height: 3.0;
+    text-align: center;
+}
+
+.containerr {
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.blockA {
+    display: inline-block;
+    width: 500px;
+    height: 200px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    font-style: italic;
+    margin-right: 2rem;
+    margin-top: 0.01rem;
+    line-height: 2;
+    padding: 1rem;
+}
+
+.container1 {
+    text-align: left;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    /* CSS smooth scroll wil go here */
+    scroll-behavior: smooth;
+    scroll-snap-type: initial;
+}
+
+.final-div {
+    display: inline-block;
+    margin: auto;
+    width: 300px;
+    height: 250px;
+    background-color: rgb(219, 234, 178, 1);
+    border-radius: 10px;
+    line-height: 2;
+    text-align: center;
+    color: #24262b;
+    padding: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+/*navbar styling*/
+
+.navbar {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #f4f4f4;
+}
+
+.navbar ul li a:hover {
+    color: skyblue;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+section h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+section p {
+    font-size: 1rem;
+    color: white;
+}
+
+
+/* Section Images/Backgrounds */
+
+section#home {
+    background: url('../images/meghan-holmes-buWcS7G1_28-unsplash.jpg') no-repeat center center/cover;
+    font-style: italic;
+    ;
+}
+
+section#about {
+    background: url('../images/bk.jpg.jpg') no-repeat center center/cover;
+}
+
+section#workoutplan {
+    background: url('../images/david-hofmann-OgiNNJw5CXM-unsplash.jpg') no-repeat center center/cover;
+}
+
+section#dietplan {
+    background: url('../images/pexels-ella-olsson-1640770.jpg') no-repeat center center/cover;
+    ;
+}
+
+
+/*Footer section */
+
+#footer {
+    background-color: #24262b;
+    position: relative;
+    height: 100px;
+    margin-top: -100px;
+    clear: both;
+    padding: 70px 0;
+}
+
+.cnt {
+    max-width: 1170px;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.font-col h4 {
+    color: #ffff;
+    font-size: 10px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffff;
+    padding-left: 10px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    ;
+    width: 40px;
+    ;
+    background-color: rgb(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffff;
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 767px) {}
+
+
+/* Set the background color of body to tan */
+
+body {
+    background-color: rgb(36, 35, 33);
+}
+
+
+/* On screens that are 992px or less, set the background color to blue */
+
+@media screen and (max-width: 992px) {
+    body {
+        background-color: rgb(68, 68, 72);
+    }
+}
+
+
+/* On screens that are 600px or less, set the background color to olive */
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: rgb(52, 52, 49);
+    }
+}
+
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 40px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 78em) {
+    .blockTwo {
+        margin: auto;
+    }
+}
